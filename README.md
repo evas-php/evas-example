@@ -1,2 +1,2 @@
-# evas-examples
-Examples of applications with evas php framework
+# evas-example
+Example of application with evas php framework
