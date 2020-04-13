@@ -1,2 +1,4 @@
 /vendor
 /config/db.php
+/composer.lock
+/composer.phar
