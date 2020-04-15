@@ -5,10 +5,10 @@
  * @since 13 Apr 2020
  */
 use base\App;
+use base\Controller;
 use Evas\Router\Router;
-use Evas\Web\Controller;
-use controllers\AuthController;
-use controllers\UserController;
+use auth\controllers\AuthController;
+use profile\controllers\UserController;
 
 $result = (new Router)
     ->controllerClass(Controller::class)
@@ -32,7 +32,9 @@ $result = (new Router)
             }
         })
         ->next()
-    ->autoByFile('/')
+    ->post('/login', [AuthController::class => 'login'])
+    ->post('/registration', [AuthController::class => 'registration'])
+    ->autoByFile('/', 'GET')
         ->filePostfix('.php')
         ->next()
     ->routingByRequest(App::request())
