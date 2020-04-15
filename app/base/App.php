@@ -29,7 +29,7 @@ class App extends WebApp
         static $user = false;
         if (false === $user) {
             $token = static::cookie()->get('token');
-            $user = User::findByToken($token);
+            $user = Auth::findUserByToken($token);
         }
         return $user;
     }
