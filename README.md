@@ -92,9 +92,17 @@ $router
 
 ### Init
 
-Create db.php in ./config
+Create db.php in ./config with:
+```PHP
+return [
+    'dbname' => 'database_name',
+    'username' => 'username_database',
+    'password' => 'password_database',
+];
+```
 
 Evas\Orm\Integrate\AppDbTrait has methods for getting, setting and initial single database
+
 Evas\Orm\Integrate\AppDbsTrait has methods for getting, setting and initial multiple database
 
 Usage this trait in your App
@@ -107,5 +115,34 @@ class App extends \Evas\Web\App
 $qr = App::db()->query('SELECT * FROM users');
 var_dump($qr->assocArrayAll());
 ```
-
 query() returned Evas\Orm\QueryResult object
+
+Get the number of rows returned.
+```PHP
+$rowCount = $qr->rowCount();
+```
+Get the record as a numbered array.
+```PHP
+$numericArray = $qr->numericArray();
+```
+Get all records as an array of numbered arrays.
+```PHP
+$numericArrayAll = $qr->numericArrayAll();
+```
+Get the record as a associative array.
+```PHP
+$assocArray = $qr->assocArray();
+```
+Get all records as an array of associative arrays.
+```PHP
+$assocArrayAll = $qr->assocArrayAll();
+```
+Get the record as a class object.
+```PHP
+$classObject = $qr->classObject();
+```
+Get all records as class objects.
+```PHP
+$classObjectAll = $qr->classObjectAll();
+```
+
