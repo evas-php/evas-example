@@ -11,26 +11,26 @@
     ],
     "repositories": [
         {"type": "vcs", "url": "https://github.com/evas-php/evas-base"},
-        {"type": "vcs", "url": "https://github.com/evas-php/evas-loader"},
         {"type": "vcs", "url": "https://github.com/evas-php/evas-di"},
-        {"type": "vcs", "url": "https://github.com/evas-php/evas-validate"},
-        {"type": "vcs", "url": "https://github.com/evas-php/evas-orm"},
         {"type": "vcs", "url": "https://github.com/evas-php/evas-http"},
+        {"type": "vcs", "url": "https://github.com/evas-php/evas-loader"},
+        // {"type": "vcs", "url": "https://github.com/evas-php/evas-mvc"},
+        {"type": "vcs", "url": "https://github.com/evas-php/evas-orm"},
+        {"type": "vcs", "url": "https://github.com/evas-php/evas-router"},
+        {"type": "vcs", "url": "https://github.com/evas-php/evas-validate"},
         {"type": "vcs", "url": "https://github.com/evas-php/evas-web"},
-        {"type": "vcs", "url": "https://github.com/evas-php/evas-web-storage"},
-        {"type": "vcs", "url": "https://github.com/evas-php/evas-mvc"},
-        {"type": "vcs", "url": "https://github.com/evas-php/evas-router"}
+        {"type": "vcs", "url": "https://github.com/evas-php/evas-web-storage"}
     ],
     "require": {
         "evas-php/evas-base": "dev-master",
-        "evas-php/evas-loader": "dev-master",
         "evas-php/evas-di": "dev-master",
-        "evas-php/evas-validate": "dev-master",
-        "evas-php/evas-orm": "dev-master",
         "evas-php/evas-http": "dev-master",
+        "evas-php/evas-loader": "dev-master",
+        // "evas-php/evas-mvc": "dev-master",
+        "evas-php/evas-orm": "dev-master",
+        "evas-php/evas-router": "dev-master",
+        "evas-php/evas-validate": "dev-master",
         "evas-php/evas-web": "dev-master",
-        "evas-php/evas-web-storage": "dev-master",
-        "evas-php/evas-mvc": "dev-master",
-        "evas-php/evas-router": "dev-master"
+        "evas-php/evas-web-storage": "dev-master"
     }
 }
